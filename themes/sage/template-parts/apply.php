@@ -13,11 +13,12 @@ apply.php
 
  <?php get_header(); ?>
 
- <?php get_template_part( 'template-parts/upper-banner' ); ?>
-
-
-
- <?php get_template_part( 'template-parts/lower-banner' ); ?>
+ <?php get_template_part( 'template-parts/upper-banner' ); 
+	while ( have_posts() ) : the_post(); 
+  		the_content();
+ 	endwhile;
+ 	
+ get_template_part( 'template-parts/lower-banner' ); ?>
 
 
  <?php get_footer(); ?>
