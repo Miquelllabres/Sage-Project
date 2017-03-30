@@ -1,18 +1,126 @@
 #footer-container {
-  max-width: 100%;
-  width: 100%;
-  margin: 0 auto;
-  border-top: 1px solid #ccc;
-  margin-top: rem-calc(60);
-
-  #footer {
-    @include grid-row();
-    padding: rem-calc(30) 0;
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #707070;
+    margin-top: rem-calc(10);
+    #footer {
+        @include grid-row();
+        padding: rem-calc(10) 0;
+        margin-left: 45%;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
     }
-  }
+}
+
+.icon-button {
+    border-radius: 3.6rem;
+    width: 1.5rem;
+    height: 3.6rem;
+    margin: 0px 5px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    background: white;
+    color: #616161;
+    &:hover span {
+        border-radius: 3.6rem;
+        width: 3.6rem;
+        height: 3.6rem;
+        margin: -1.8rem;
+    }
+    i {
+        background: none;
+        height: 3.6rem;
+        width: 3.6rem;
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        line-height: 3.6rem;
+        transition: all 0.3s;
+    }
+    .icon-button .fi-social-twitter {
+        color: $light-gray;
+    }
+    .icon-button .fi-social-facebook {
+        color: $light-gray;
+    }
+    .icon-button .fi-social-instagram {
+        color: $light-gray;
+    }
+    .icon-button .fi-social-youtube {
+        color: $light-gray;
+    }
+    .icon-button .fi-social-linkedin {
+        color: $light-gray;
+    }
+    .icon-button:hover .fi-social-twitter,
+    .icon-button:hover .fi-social-youtube,
+    .icon-button:hover .fi-social-facebook,
+    .icon-button:hover .fi-social-instagram,
+    .icon-button:hover .fi-social-linkedin {
+        color: $light-gray;
+        font-size: 1.6rem;
+        line-height: 3.9rem;
+    }
+}
+
+#address-text {
+    padding-top: 60px;
+    margin-left: 46%;
+}
+
+#heart-text {
+    float: right;
+    margin-top: -10rem;
+    margin-right: 17rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.flex-container {
+    display: inline-flex;
+}
+
+.strong-text {
+    font-weight: 700;
+}
+
+.email {
+    padding-top: 60px;
+    width: 22%;
+    margin-left: 17%;
+}
+
+p {
+    line-height: 0.6rem;
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+    width: 50%;
+    margin-top: 90px;
 }

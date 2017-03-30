@@ -1,4 +1,3 @@
-page
 <?php
 /**
  * The template for displaying pages
@@ -12,7 +11,8 @@ page
  */
 
  get_header(); ?>
-<!--  <?php get_template_part( 'template-parts/upper-banner' ); ?> -->
+
+ <?php get_template_part( 'template-parts/featured-image' ); ?>
 
  <div id="page" role="main">
 

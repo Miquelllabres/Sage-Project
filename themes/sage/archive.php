@@ -16,31 +16,10 @@ archive
  * @since FoundationPress 1.0.0
  */
 
-
-
-
-
 get_header(); ?>
-<div class="page-template-archive">
-
-<?php if( get_post_type() == 'entrepreneur' ){ 
- echo get_template_part( 'template-parts/upper-banner-archive' );
- } if( get_post_type() == 'events' ) {
-	echo get_template_part( 'template-parts/upper-banner-archive-events' );
-} if( get_post_type() == 'news' ) {
-	echo get_template_part( 'template-parts/upper-banner-archive-news' );
-	}?>
-
-</div>
-
-<?php if( get_post_type() == 'events' ) {
-   $class = "archive-container-events";
-} else {
-   $class = "archive-container";
-} ?>
 
 <div id="page" role="main">
-	<article class="<?php echo $class ?>">
+	<article class="main-content ">
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
@@ -69,20 +48,8 @@ get_header(); ?>
 		<?php endif; ?>
 
 	</article>
-<!-- 	<?php get_sidebar(); ?>
- -->
+	<?php get_sidebar(); ?>
+
 </div>
-
-<div class="subscribe">
-  <h3>Join our Newsletter</h3>
-  <h4>Not ready to get involved just yet? Stay connected!</h4>
-  <div class="email">
-    <?php echo do_shortcode('[mc4wp_form id="56"]'); ?>
-  </div>
-</div>
-
-<?php echo get_template_part( 'template-parts/lower-banner-archives' );?>
-
 
 <?php get_footer();
-?>
