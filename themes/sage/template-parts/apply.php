@@ -16,9 +16,19 @@ apply.php
  <?php get_template_part( 'template-parts/upper-banner' ); 
 	while ( have_posts() ) : the_post(); 
   		the_content();
- 	endwhile;
  	
- get_template_part( 'template-parts/lower-banner' ); ?>
+ 	?>
+ 
+ 	<div class="hide-for-small-only">
+ 		<?php echo do_shortcode(get_field('shortcode_for_apply_page')); ?>
+ 	</div>
+ 	<div class="show-for-small-only">
+ 		<?php echo do_shortcode(get_field('shortcode_for_mobile_apply')); ?>
+ 	</div>
+ 	
+ 	<?php endwhile; ?>
+ 	
+ <?php get_template_part( 'template-parts/lower-banner' ); ?>
 
 
  <?php get_footer(); ?>

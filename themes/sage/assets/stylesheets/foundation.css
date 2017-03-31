@@ -7319,6 +7319,252 @@ input[type="submit"] {
     color: #F04;
     margin: 40px 0; }
 
+@media all and (max-width: 1050px) and (min-width: 640px) {
+  .timeline_title {
+    padding: 0 0 4rem !important; }
+  .horzi_timeline {
+    position: relative; }
+    .horzi_timeline .horzi_top, .horzi_timeline .horzi_bottom {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+    .horzi_timeline .timeline_line {
+      width: 100%;
+      height: 1px;
+      left: 0;
+      position: relative;
+      z-index: 1;
+      background: #64D8F2; }
+    .horzi_timeline .entry {
+      width: 30%;
+      background: white;
+      padding: 1.5rem;
+      -webkit-box-shadow: 0 0 6px #ccc;
+              box-shadow: 0 0 6px #ccc;
+      position: relative;
+      top: -35px; }
+      .horzi_timeline .entry .circle {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        border: 4px solid #64D8F2;
+        background-color: #f9f9f9;
+        position: absolute;
+        bottom: -47px;
+        left: 51%;
+        margin-left: -12.5px;
+        z-index: 5; }
+      .horzi_timeline .entry .triangle {
+        width: 0;
+        height: 0;
+        border-top: 15px solid white;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        position: absolute;
+        left: 45%;
+        bottom: -30px; }
+      .horzi_timeline .entry .title {
+        color: #64D8F2;
+        font-size: 1.5rem; }
+      .horzi_timeline .entry p {
+        font-size: 0.9rem; }
+    .horzi_timeline .horzi_bottom .entry {
+      top: 35px;
+      margin-bottom: 30px; }
+      .horzi_timeline .horzi_bottom .entry .circle {
+        top: -48px; }
+      .horzi_timeline .horzi_bottom .entry .triangle {
+        border-bottom: 15px solid white;
+        border-top: 15px solid transparent;
+        left: 45%;
+        top: -30px; } }
+
+@media only screen and (min-width: 1051px) {
+  .timeline_title {
+    padding: 0 0 4rem !important; }
+  .horzi_timeline {
+    position: relative; }
+    .horzi_timeline .horzi_top, .horzi_timeline .horzi_bottom {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+    .horzi_timeline .horzi_top {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .horzi_timeline .timeline_line {
+      width: 100%;
+      height: 1px;
+      left: 0;
+      position: relative;
+      z-index: 1;
+      background: #64D8F2; }
+    .horzi_timeline .entry {
+      margin: 0 30px;
+      width: 22%;
+      background: white;
+      padding: 1.5rem;
+      -webkit-box-shadow: 0 0 6px #ccc;
+              box-shadow: 0 0 6px #ccc;
+      position: relative;
+      top: -35px; }
+      .horzi_timeline .entry .circle {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        border: 4px solid #64D8F2;
+        background-color: #f9f9f9;
+        position: absolute;
+        bottom: -47px;
+        left: 46%;
+        z-index: 5; }
+      .horzi_timeline .entry .triangle {
+        width: 0;
+        height: 0;
+        border-top: 15px solid white;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        position: absolute;
+        left: 45%;
+        bottom: -30px; }
+      .horzi_timeline .entry .title {
+        color: #64D8F2;
+        font-size: 1.5rem; }
+      .horzi_timeline .entry p {
+        font-size: 0.9rem; }
+    .horzi_timeline .horzi_bottom .entry {
+      top: 35px;
+      margin-bottom: 30px; }
+      .horzi_timeline .horzi_bottom .entry .circle {
+        top: -48px; }
+      .horzi_timeline .horzi_bottom .entry .triangle {
+        border-bottom: 15px solid white;
+        border-top: 15px solid transparent;
+        left: 45%;
+        top: -30px; } }
+
+body .timeline-wrap {
+  padding: 3rem 1.5rem;
+  background: #F9F9F9; }
+
+body .timeline_title {
+  text-align: center;
+  padding: 1rem 0 2.5rem 0; }
+  body .timeline_title h3 {
+    color: #E2364A; }
+
+body .entries .entry {
+  width: 100%;
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  clear: both;
+  text-align: left;
+  -webkit-box-shadow: 0 0 12px #CCC;
+          box-shadow: 0 0 12px #CCC; }
+  body .entries .entry .title {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #64D8F2; }
+  body .entries .entry .body {
+    color: #aaa; }
+    body .entries .entry .body p {
+      line-height: 1.4em; }
+
+@media screen and (min-width: 640px) and (max-width: 1050px) {
+  body .timeline-wrap {
+    padding: 3rem 1.5rem;
+    background: #F9F9F9; }
+  body .timeline_title {
+    text-align: center;
+    padding: 1rem 0 2.5rem 0; }
+    body .timeline_title h3 {
+      color: #E2364A; }
+  body .timeline_line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #64D8F2;
+    left: 50%;
+    margin-left: -1px;
+    top: 0; }
+  body .entries {
+    position: relative; }
+    body .entries:after {
+      clear: both;
+      display: block;
+      content: ""; }
+    body .entries .entry {
+      width: calc(53.6% - 80px);
+      background: white;
+      float: left;
+      padding: 20px;
+      clear: both;
+      text-align: right;
+      -webkit-box-shadow: 0 0 12px #CCC;
+              box-shadow: 0 0 12px #CCC; }
+      body .entries .entry:not(:first-child) {
+        margin-top: -60px; }
+      body .entries .entry .title {
+        font-size: 32px;
+        margin-bottom: 12px;
+        position: relative;
+        color: #64D8F2; }
+        body .entries .entry .title:before {
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          border: 4px solid #64D8F2;
+          background-color: #f9f9f9;
+          border-radius: 100%;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          right: -73px;
+          z-index: 1000; }
+        body .entries .entry .title.big:before {
+          width: 24px;
+          height: 24px;
+          -webkit-transform: translate(8px, -50%);
+              -ms-transform: translate(8px, -50%);
+                  transform: translate(8px, -50%); }
+        body .entries .entry .title .triangle {
+          width: 0;
+          height: 0;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          border-left: 15px solid white;
+          position: absolute;
+          right: -35px;
+          top: 10px; }
+      body .entries .entry .body {
+        color: #aaa; }
+        body .entries .entry .body p {
+          line-height: 1.4em; }
+      body .entries .entry:nth-child(2n) {
+        text-align: left;
+        float: right;
+        width: calc(54.5% - 80px); }
+        body .entries .entry:nth-child(2n) .title:before {
+          left: -63px; }
+        body .entries .entry:nth-child(2n) .title.big:before {
+          -webkit-transform: translate(-8px, -50%);
+              -ms-transform: translate(-8px, -50%);
+                  transform: translate(-8px, -50%); }
+        body .entries .entry:nth-child(2n) .title .triangle {
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          left: -50px;
+          border-right: 15px solid white; } }
+
 .sites-button {
   background: #FF6908;
   font-size: 1.25rem;
@@ -7565,8 +7811,6 @@ input[type="submit"] {
       .entry-header #trapezoide .labelTitle h1 {
         padding-top: 5px !important; } }
 
-<<<<<<< HEAD
-=======
 .homeFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7582,7 +7826,6 @@ input[type="submit"] {
     .homeFlex .flexcolumn .size50 {
       height: 10vh; }
 
->>>>>>> Miquelllabres/master
 #front-hero {
   background: url("../images/demo/hero-bg-foundation-6-small.svg") bottom center;
   -webkit-background-size: cover;
@@ -8538,8 +8781,6 @@ input[type="submit"] {
   height: 20vh;
   width: 100%; }
 
-<<<<<<< HEAD
-=======
 .back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg); }
@@ -8568,5 +8809,4 @@ input[type="submit"] {
     width: 80% !important;
     margin: 0 auto; } }
 
->>>>>>> Miquelllabres/master
 /*# sourceMappingURL=foundation.css.map */

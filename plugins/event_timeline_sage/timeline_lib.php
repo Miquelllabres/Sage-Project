@@ -46,6 +46,7 @@ class sage_timeline {
             }
             $i++;
           endwhile;
+          wp_reset_query();
           if ($this->orientation == "horzi") {
             self::horizontal_return();
           }else { ?>
@@ -64,17 +65,21 @@ class sage_timeline {
       <h5> <?php echo get_field("timeline_date"); ?> </h5>
       <div class="body">
         <?php the_content() ?>
+            <h6><?php the_field("subheading",$item); ?></h6>
+            <p><?php the_field("description",$item); ?></p>
+          
       </div>
     </div> <?php
   }
   public function horizontal_return() { ?>
     <div class="horzi_top">
       <?php foreach ($this->horzi_top as $item) { ?>
-        <div class="entry large-3 medium-4 small-6">
+        <div class="entry "><!-- large-3 medium-4 small-6 -->
           <div class="circle"> </div>
           <div class="title"><?php echo get_the_title($item) ?> <div class="triangle"></div></div>
           <div class="body">
-            <?php echo get_post_field('post_content', $item); ?>
+              <h6><?php the_field("subheading",$item); ?></h6>
+              <p><?php the_field("description",$item); ?></p>
           </div>
         </div>
       <?php }?>
@@ -82,11 +87,12 @@ class sage_timeline {
     <div class="timeline_line"></div>
     <div class="horzi_bottom">
       <?php foreach ($this->horzi_bottom as $item) { ?>
-        <div class="entry large-3 medium-4 small-6">
+        <div class="entry "> <!-- large-3 medium-4 small-6 -->
           <div class="circle"> </div>
           <div class="title"><?php echo get_the_title($item)?> <div class="triangle"></div></div>
           <div class="body">
-            <?php echo get_post_field('post_content', $item);  ?>
+            <h6><?php the_field("subheading",$item); ?></h6>
+            <p><?php the_field("description",$item); ?></p>
           </div>
         </div>
       <?php }?>
