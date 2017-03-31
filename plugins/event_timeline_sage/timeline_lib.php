@@ -91,7 +91,9 @@ endif;
           <div class="circle"> </div>
           <div class="title"><?php echo get_the_title($item)?> <div class="triangle"></div></div>
           <div class="body">
-            <?php echo get_post_field('post_content', $item);  ?>
+          <h3><?php the_field('subheading', $item); ?></h3>
+            <p><?php the_field('description', $item); ?></p>
+           <!--  <?php echo get_post_field('post_content', $item);  ?> -->
           </div>
         </div>
       <?php }?>
