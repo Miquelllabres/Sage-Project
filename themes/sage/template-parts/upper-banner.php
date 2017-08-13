@@ -21,7 +21,7 @@ $Final_Rgb_Img_Overlay_color = implode(", ", $RGB_Img_Overlay_color );
 
 
 			<?php if (is_front_page() || (is_page(['about','contact','become-a-mentor-or-partner','program'])) ) { ?>
-			<a class="button" href="http://localhost:8888/sage/contact/">GET STARTED</a>
+			<a class="button" href="http://www.miquelllabres.com/miquel/projects/sage/contact/">GET STARTED</a>
 			<?php } ?>
 
 

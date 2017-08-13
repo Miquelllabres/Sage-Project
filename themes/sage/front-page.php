@@ -60,7 +60,7 @@
      <?php  $query_events = new WP_Query(array(
         "posts_per_page" => 1,
         'post_type' => 'events',
-        "order"=> "ASC" ));?>
+        "order"=> "DESC" ));?>
         <?php while ( $query_events->have_posts() ) : $query_events->the_post(); ?>
         <?php get_template_part( 'template-parts/content', get_post_type() ); ?>
         <?php endwhile; ?>
@@ -69,7 +69,7 @@
           <?php $query_entre = new WP_Query(array(
             "posts_per_page" => 1,
             'post_type' => 'entrepreneur',
-            "order"=> "ASC"));?>
+            "order"=> "DESC"));?>
           <?php while ( $query_entre->have_posts() ) : $query_entre->the_post(); ?>
           <?php get_template_part( 'template-parts/content', get_post_type() ); ?>
           <?php endwhile; ?>
@@ -79,7 +79,7 @@
         <?php $query_news = new WP_Query(array(
         "posts_per_page" => 1,
         'post_type' => 'news',
-        "order"=> "ASC" ));?>
+        "order"=> "DESC" ));?>
       
         <?php while ( $query_news->have_posts() ) : $query_news->the_post(); ?>
         <?php get_template_part( 'template-parts/content', get_post_type() ); ?>

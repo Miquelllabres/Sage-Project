@@ -53,7 +53,7 @@ $dropdownmenu-border-width: nth($dropdownmenu-border, 1);
   @if $dir == horizontal {
     > li.opens-left {
       > .is-dropdown-submenu {
-        top: 100%;
+        top: 50%;
         right: 0;
         left: auto;
       }

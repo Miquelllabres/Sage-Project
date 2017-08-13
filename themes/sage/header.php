@@ -57,7 +57,7 @@
 <?php $class = "/sage.png"; ?>
         <nav class="top-bar" id="main-menu">
             <div class="top-bar-left">
-                <li style="list-style: none;"> <a class="logoImage" href="http://localhost:8888/sage/"><img  width="34px" height="34px" src="<?php echo get_bloginfo("stylesheet_directory").$class;?>" ></a></li>
+                <li style="list-style: none;"> <a class="logoImage" href="http://www.miquelllabres.com/miquel/projects/sage/"><img  width="34px" height="34px" src="<?php echo get_bloginfo("stylesheet_directory").$class;?>" ></a></li>
                 
             </div>
             <div class="top-bar-right">
@@ -65,22 +65,22 @@
                     <li class="has-dropdown">
                         <a href="#">About</a>
                         <ul class="submenu menu vertical" data-submenu>
-                            <li><a href="http://localhost:8888/sage/about/">About Sage</a></li>
-          <li><a href="http://localhost:8888/sage/become-a-mentor-or-partner/">Become a Mentor o Partner</a></li>
-          <li><a href="http://localhost:8888/sage/faq/">FAQ</a></li>
+                            <li><a href="http://www.miquelllabres.com/miquel/projects/sage/about/">About Sage</a></li>
+          <li><a href="http://www.miquelllabres.com/miquel/projects/sage/become-a-mentor-or-partner/">Become a Mentor o Partner</a></li>
+          <li><a href="http://www.miquelllabres.com/miquel/projects/sage/faq/">FAQ</a></li>
                         </ul>
                     </li>
-                    <li><a href="http://localhost:8888/sage/program/">Program</a></li>
+                    <li><a href="http://www.miquelllabres.com/miquel/projects/sage/program/">Program</a></li>
                     <li class="has-dropdown">
                         <a href="#">Community</a>
                         <ul class="submenu menu vertical" data-submenu>
-                            <li><a href="http://localhost:8888/sage/entrepreneur/">Entrepreneur Spotlights</a></li>
-          <li><a href="http://localhost:8888/sage/news/">Sage&Industry News</a></li>
-          <li><a href="http://localhost:8888/sage/events/">Sage Events</a></li>
+                            <li><a href="http://www.miquelllabres.com/miquel/projects/sage/entrepreneur/">Entrepreneur Spotlights</a></li>
+          <li><a href="http://www.miquelllabres.com/miquel/projects/sage/news/">Sage & Industry News</a></li>
+          <li><a href="http://www.miquelllabres.com/miquel/projects/sage/events/">Sage Events</a></li>
         </ul>
       </li>
-      <li><a href="http://localhost:8888/sage/contact/">Contact</a></li>
-      <li class="red"><a class="red" href="http://localhost:8888/sage/apply/">Apply</a>
+      <li><a href="http://www.miquelllabres.com/miquel/projects/sage/contact/">Contact</a></li>
+      <li class="red"><a class="red" href="http://www.miquelllabres.com/miquel/projects/sage/apply/">Apply</a>
 
             </div>
         </nav>
