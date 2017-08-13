@@ -50,7 +50,7 @@
 </div>
 
 <!--  LOWER BANNER-->
-<?php echo get_template_part( 'template-parts/lower-banner' );?>
+
 
 <div class="subscribe">
   <h3>Join our Newsletter</h3>
@@ -59,5 +59,5 @@
     <?php echo do_shortcode('[mc4wp_form id="56"]'); ?>
   </div>
 </div>
-
+<?php echo get_template_part( 'template-parts/lower-banner' );?>
 <?php wp_footer(); ?>
